@@ -1,0 +1,381 @@
+html, body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/*-------------
+
+NAVBAR CSS
+
+-------------*/
+.navbar{
+    background-color: #000; 
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+.navbar-brand{
+    color: #FFFF !important;
+    font-weight: 600;
+}
+.nav-link{
+    color: #FFFF !important;
+}
+.dropdown-menu{
+    right: 0 !important; 
+    left: auto !important;
+}
+.dropdown-item{
+    margin: 0;
+    padding: 10px;
+}
+
+@media all and (max-width: 600px){
+    .dropdown-item{
+        max-width: 100px !important;
+    }
+}
+
+
+/*-------------
+
+PAINEL CSS
+
+-------------*/
+.dashboard{
+    padding: 100px 0 0;
+}
+.dashboard div{
+    display: flex;
+    justify-content: center;
+}
+.canvas-div{
+    width: 100%;
+    background-color: #EDEDED;
+    margin: 15px;
+    border-radius: 1em;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+.dashboard canvas{
+    margin: 30px 0;
+    max-width: 400px !important; 
+    max-height: 200px !important;
+}
+h2{
+    font-weight: 700;
+    font-size: 35px;
+    padding: 0 5vw;
+}
+.container-busca{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    background-color: #919191;
+}
+.form-pesquisa{
+    display: flex;
+    width: 100% !important;
+}
+.form-pesquisa input, .form-pesquisa button{
+    height: 40px;
+    margin: 0 10px;
+}
+
+.aluno a{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    color: #FFFF;
+    background-color: #021aee;
+    border-radius: 1em;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.alunos{
+    display: grid;
+    width: 90%;
+    margin: 0 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.aluno-card{
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    background-color: #EDEDED;
+    border-radius: 1em;
+    display: block;
+    height: auto;
+    width: 100%;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+.aluno-card h3{
+    font-weight: 600;
+    font-size: 30px;
+}
+.aluno-card img{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 1em;
+}
+.aluno-card h4{
+    font-weight: 500;
+}
+.aluno-card > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.aluno-card a{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    background-color: #EDEDED;
+    border: 1px solid #919191;
+    color: #000;
+    line-height: 20px !important;
+    text-decoration: none;
+
+}
+#Aprovado{
+    color: #7B1FA2;
+    font-weight: 600;
+    background-color: #FFFF;
+    border-radius: 1em;
+    padding: 5px;
+    margin: 15px 10%;
+}
+#Reprovado{
+    color: #D32F2F;
+    background-color: #FFFF;
+    font-weight: 600;
+    border-radius: 1em;
+    padding: 5px;
+    margin: 15px 10%;
+
+
+}
+#delete-aluno{
+    background-color: #D32F2F;
+}
+.aluno-card a:hover{
+    text-decoration: none;
+    color: #000;
+    filter: brightness(130%);
+}
+
+@media all and (max-width: 800px){
+    .dashboard div{
+        display: block;
+    }
+    .canvas-div{
+        width: 90%;
+        margin: 20px 5%;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .dashboard canvas{
+        padding: 5px;
+        max-height: 300px !important;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .container-busca{
+        display: block;
+        padding: 15px;
+    }
+    .form-pesquisa{
+        display: block;
+        margin-top: 10px;
+    }
+    .form-pesquisa input, .form-pesquisa button{
+        height: 40px;
+        margin: 5px auto;
+        width: 80%;
+        display: block;
+    }
+    .aluno a{
+        margin: 0 auto;
+    }
+    .alunos{
+        display: block;
+        width: 90%;
+        margin: 0 5%;
+    }
+    .aluno-card{
+        margin: 15px 0;
+        padding: 15px;
+    }
+    .aluno-card p{
+        font-size: 12px;
+    }
+    .aluno-card h3{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .aluno-card h4{
+        font-size: 16px;
+    }
+    .aluno-card > div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+/*-------------
+
+LOGIN CSS
+
+-------------*/
+.body-login h1{
+    padding: 15px;
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    color: #000;
+}
+.login{
+    width: 60%;
+    display: block;
+    padding: 20px 50px;
+    margin: 15px auto;
+    border-radius: 1em;
+    box-shadow: 3px 3px 24px 0px rgba(50, 50, 50, 0.52);
+    background-color: #EDEDED;
+}
+.login h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+.login form{
+    width: 80%;
+    margin: 0 10%;
+}
+
+.login div{
+    margin: 15px 0;
+}
+.login label{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+#btn-entrar{
+    margin: 20px 0 10px;
+    width: 100%;
+    font-size: 20px;
+}
+#btn-entrar-cad{
+    width: 65%;
+    margin-right: 4%;
+    font-size: 20px;
+}
+#btn-entrar-cad1{
+    width: 30%;
+    margin: 15px 0;
+    font-size: 20px;
+    background-color: #EDEDED;
+    border: 1px solid #7c7c7c ;
+    color: #000;
+}
+.invalid-feedback{
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: 700;
+}
+.alert{
+    text-align: center;
+}
+.alert-danger{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: red;
+    background-color: #EDEDED;
+}
+.voltar a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+.input-file label{
+    display: block;
+}
+.input-file input{
+    box-shadow: none;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.input-file span{
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: 700;
+    color: red;
+}
+
+@media all and (max-width: 600px){
+    .body-login h1{
+        font-size: 25px;
+    }
+    .login{
+        width: 90%;
+    }
+    
+    .login h2{
+        font-size: 18px;
+    }
+    .login form{
+        width: 100%;
+        margin: 0;
+    }
+    .login label{
+        font-size: 15px;
+    }
+    #btn-entrar{
+        margin: 0;
+        font-size: 15px;
+    }
+    #btn-entrar-cad{
+        width: 100%;
+        margin-right: 0;
+        font-size: 13px;
+    }
+    #btn-entrar-cad1{
+        width: 100%;
+        font-size: 13px;
+    }
+    .invalid-feedback{
+        font-size: 13px;
+        margin: 0;
+    }
+    .alert-danger{
+        font-size: 13px;
+    }
+    .voltar a{
+        font-size: 13px;
+    }
+    .input-file span{
+        font-size: 13px;
+    }
+    .login p{
+        font-size: 11px;
+    }
+}
